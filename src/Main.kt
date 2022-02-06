@@ -1,6 +1,8 @@
-class Rectangle(var height: Double, var length: Double) {
-    var perimeter = (height + length) * 2
-}
+/**
+ * This is just a sandbox for testing misc Kotlin stuff
+ *
+ * Created 02/06/2022
+ */
 
 fun main() {
     // function to handle adding two numbers
