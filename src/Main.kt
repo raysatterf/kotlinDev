@@ -15,7 +15,7 @@ fun main() {
     val myHeight = 5.0
     val myLength = 2.0
     val myRectangle = Rectangle(myHeight,myLength)
-    val outputNum = sum(thisNum,thatNum)
+    val outputNum = sum(thisNum,thatNum) // use sum function to assign function output to variable
     val someNum: Int // declare a variable without initializing it to a string, int, etc
     someNum = 42 // initializing a variable
 
