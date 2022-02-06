@@ -9,13 +9,13 @@ fun main() {
     }
 
     // variable initialization
-    var fullName = "Ray Satterfield"
-    var thisNum = 4
-    var thatNum = 6
-    var outputNum = sum(thisNum,thatNum)
-    var myHeight = 5.0
-    var myLength = 2.0
+    val fullName = "Ray Satterfield"
+    val thisNum = 4
+    val thatNum = 6
+    val myHeight = 5.0
+    val myLength = 2.0
     val myRectangle = Rectangle(myHeight,myLength)
+    val outputNum = sum(thisNum,thatNum)
     val someNum: Int // declare a variable without initializing it to a string, int, etc
     someNum = 42 // initializing a variable
 
