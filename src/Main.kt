@@ -42,9 +42,26 @@ fun main() {
         }
     }
 
-    // print details etc
-    println("the sum of $thisNum and $thatNum is $outputNum.")
-    println("The perimeter is ${myRectangle.perimeter}.") // here we access the perimeter variable from the Rectangle class
-    println(fullName.isEmpty()) // this evaluates whether the string is empty or not
-    println("Transaction comment = $txComment")
+    fun printDetails() {
+        // print details etc
+        println("the sum of $thisNum and $thatNum is $outputNum.")
+        println("The perimeter is ${myRectangle.perimeter}.") // here we access the perimeter variable from the Rectangle class
+        println(fullName.isEmpty()) // this evaluates whether the string is empty or not
+        println("Transaction comment = $txComment")
+    }
+    printDetails()
+
+    val specialChar = '%'
+    val repeatCount = 5
+    fun repeatThisChar(x: Char, y: Int) {
+        // simple function to repeat action(s) a specified number of times, nested tests
+        repeat(2) {
+            repeat(y) {
+                print(x)
+            }
+            println()
+        }
+
+    }
+    repeatThisChar(specialChar,repeatCount)
 }
