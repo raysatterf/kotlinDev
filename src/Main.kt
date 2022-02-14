@@ -4,8 +4,6 @@
  * Created 02/06/2022
  */
 
-
-
 fun main() {
     // function to handle adding two numbers
     fun sum(a: Int, b: Int): Int {
@@ -23,10 +21,9 @@ fun main() {
 
     // dealing with NULL and null expressions
     var thisCanBeNull: String? = "something" // initializing a string with a value, but allowing the variable to be NULL
-    var stringLength = thisCanBeNull?.length // because this var can be null, we must invoke a 'safe call' on the length function so we do not get null point exceptions
+    var stringLength = thisCanBeNull?.length // because this var can be null, we must invoke a 'safe call' on the length function, so we do not get null point exceptions
     val thatCanBeNullLength: Int = if (thisCanBeNull != null) thisCanBeNull.length else -1
-    // simplify null expression with Elvis operator
-    // val thatCanBeNullLength = thisCanBeNull?.length ?: -1
+    // simplify null expression with Elvis operator --> val thatCanBeNullLength = thisCanBeNull?.length ?: -1
 
     val someNum: Int // declare a variable without initializing it to a string, int, etc
     someNum = 42 // initializing a variable
