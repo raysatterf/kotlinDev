@@ -7,8 +7,7 @@ fun main () {
 
     val myCoin = Coin()
     println("You tossed the coin and it landed on ${myCoin.toss()}!")
-     // val newCharacter = Connor()
-     // val printStats = newCharacter.getStats()
+
 }
 
 class Dice(val numSides: Int) {
@@ -25,27 +24,5 @@ class Coin() {
     var coinSide = arrayOf("Heads","Tails")
     fun toss(): String {
         return coinSide.random()
-    }
-}
-
-class Connor {
-    var weight = 100..300
-    var height = 4..8
-    var name = "Connor, The Cuddly"
-    var perception = 1..10
-    var strength = 1..10
-    var manhood = -10..10
-    var fingerLength = 1..10
-    var forHeadHeight = 1..10
-
-    fun getStats() {
-        println("Character Name: $name")
-        println("Height: ${height.random()} ft. tall")
-        println("Weight: ${weight.random()} lbs")
-        println("Forehead Height: ${forHeadHeight.random()} inches")
-        println("Finger Length: ${fingerLength.random()} inches")
-        println("Perception: ${perception.random()}")
-        println("Strength: ${strength.random()}")
-        println("Manhood: ${manhood.random()} inches")
     }
 }
